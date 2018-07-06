@@ -9,4 +9,5 @@ class Hero
     @name = name
     @critd = critd
   end
+  
  end

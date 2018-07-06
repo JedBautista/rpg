@@ -1,3 +1,6 @@
+require_relative 'attack'
+require_relative 'selectHero'
+
 class TurnBased
   def mode (hero1, hero2)
     n = 0
@@ -5,6 +8,9 @@ class TurnBased
       attacker, defender = SelectHero.heroSelect(hero1,hero2)
       Attack.attack(attacker,defender)
       n+=1
+      if attacker.hp <= 0 || defender.hp <= 0
+        break
+      end
     end
 
     if (n > 4)

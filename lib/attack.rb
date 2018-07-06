@@ -1,3 +1,5 @@
+require_relative 'crit'
+
 class Attack 
   def self.attack(attacker, defender)
     damage = Crit.addDamage(attacker)

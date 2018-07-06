@@ -1,3 +1,5 @@
+require_relative 'attack'
+require_relative 'selectHero'
 
 class DeathMatch
   def mode (hero1,hero2)

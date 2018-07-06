@@ -1,3 +1,5 @@
+require_relative 'hero'
+
 class Tank < Hero
   def initialize
     @hp = 100

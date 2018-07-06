@@ -1,3 +1,5 @@
+require_relative 'hero'
+
 class Healer < Hero
   def initialize
     @hp = 60

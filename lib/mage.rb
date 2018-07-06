@@ -1,3 +1,4 @@
+require_relative 'hero'
 
 class Mage < Hero
   def initialize
